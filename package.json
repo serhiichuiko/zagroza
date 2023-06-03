@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://serhiichuiko.github.io/react-gh-pages/zagroza",
+  "homepage": "https://serhiichuiko.github.io/zagroza",
   "eslintConfig": {
     "extends": [
       "react-app",

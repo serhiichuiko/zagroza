@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.2fba323e.css",
-    "main.js": "/react-gh-pages/static/js/main.bcecc546.js",
-    "index.html": "/react-gh-pages/index.html",
-    "static/media/arrow-bottom.svg": "/react-gh-pages/static/media/arrow-bottom.87c32a1752ee4c5bffa2c5fe19fe031c.svg",
-    "main.2fba323e.css.map": "/react-gh-pages/static/css/main.2fba323e.css.map",
-    "main.bcecc546.js.map": "/react-gh-pages/static/js/main.bcecc546.js.map"
+    "main.css": "/react-gh-pages/zagroza/static/css/main.2fba323e.css",
+    "main.js": "/react-gh-pages/zagroza/static/js/main.e136c7f0.js",
+    "index.html": "/react-gh-pages/zagroza/index.html",
+    "static/media/arrow-bottom.svg": "/react-gh-pages/zagroza/static/media/arrow-bottom.87c32a1752ee4c5bffa2c5fe19fe031c.svg",
+    "main.2fba323e.css.map": "/react-gh-pages/zagroza/static/css/main.2fba323e.css.map",
+    "main.e136c7f0.js.map": "/react-gh-pages/zagroza/static/js/main.e136c7f0.js.map"
   },
   "entrypoints": [
     "static/css/main.2fba323e.css",
-    "static/js/main.bcecc546.js"
+    "static/js/main.e136c7f0.js"
   ]
 }

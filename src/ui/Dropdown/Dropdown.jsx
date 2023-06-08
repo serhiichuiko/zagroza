@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 
 import { ReactComponent as Arrow } from './img/arrow-bottom.svg';
 import './style.css';
@@ -10,38 +10,38 @@ const Dropdown = ({ options, onSelect, selectedOption, onSearch, renderOption, r
   const dropdownRef = useRef(null);
   const inputRef = useRef(null);
 
-  const handleDropdownToggle = (event) => {
+  const handleDropdownToggle = useCallback((event) => {
     if (!event.target.classList.contains('dropdown-option')) {
       setIsOpen(!isOpen);
     }
-  };
+  }, [isOpen]);
 
-  const handleOptionSelect = (option, event) => {
+  const handleOptionSelect = useCallback((option, event) => {
     event.stopPropagation();
     onSelect(option);
     setSearchQuery('');
     setIsOpen(false);
-  };
+  }, [onSelect]);
 
-  const handleSearchInputChange = (event) => {
+  const handleSearchInputChange = useCallback((event) => {
     const value = event.target.value;
     setSearchQuery(value);
     // onSearch(value); // function for API
-  };
+  }, []);
 
-  const handleOutsideClick = (event) => {
+  const handleOutsideClick = useCallback((event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsOpen(false);
       setSearchQuery('');
     }
-  };
+  }, []);
 
   useEffect(() => {
     document.addEventListener('click', handleOutsideClick);
     return () => {
       document.removeEventListener('click', handleOutsideClick);
     };
-  }, []);
+  }, [handleOutsideClick]);
 
   const handleInputClick = (event) => {
     event.stopPropagation();
